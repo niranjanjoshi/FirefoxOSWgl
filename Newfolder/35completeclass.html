@@ -1,0 +1,67 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 6.8. Declaring a complete class.
+1: // Begin Rect.hpp
+2: #include &lt;iostream.h&gt;
+3: class Point // holds x,y coordinates
+4: {
+5: // no constructor, use default
+6: public:
+7: void SetX(int x) { itsX = x; }
+8: void SetY(int y) { itsY = y; }
+9: int GetX()const { return itsX;}
+10: int GetY()const { return itsY;}
+11: private:
+12: int itsX;
+13: int itsY;
+14: }; // end of Point class declaration
+15:
+16:
+17: class Rectangle
+18: {
+19: public:
+20: Rectangle (int top, int left, int bottom, int right);
+21: ~Rectangle () {}
+22:
+23: int GetTop() const { return itsTop; }
+24: int GetLeft() const { return itsLeft; }
+25: int GetBottom() const { return itsBottom; }
+26: int GetRight() const { return itsRight; }
+27:
+28: Point GetUpperLeft() const { return itsUpperLeft; }
+29: Point GetLowerLeft() const { return itsLowerLeft; }
+30: Point GetUpperRight() const { return itsUpperRight; }
+31: Point GetLowerRight() const { return itsLowerRight; }
+32:
+33: void SetUpperLeft(Point Location) {itsUpperLeft =
+Location;}
+34: void SetLowerLeft(Point Location) {itsLowerLeft =
+Location;}
+35: void SetUpperRight(Point Location) {itsUpperRight =
+Location;}
+36: void SetLowerRight(Point Location) {itsLowerRight =
+Location;}
+37:
+38: void SetTop(int top) { itsTop = top; }
+39: void SetLeft (int left) { itsLeft = left; }
+40: void SetBottom (int bottom) { itsBottom = bottom; }
+41: void SetRight (int right) { itsRight = right; }
+42:
+43: int GetArea() const;
+44:
+45: private:
+46: Point itsUpperLeft;
+47: Point itsUpperRight;
+48: Point itsLowerLeft;
+49: Point itsLowerRight;
+50: int itsTop;
+51: int itsLeft;
+52: int itsBottom;
+53: int itsRight;
+54: };
+55: // end Rect.hpp
+</pre>
+</body>
+</html>

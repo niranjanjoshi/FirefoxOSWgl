@@ -1,0 +1,43 @@
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+
+Program to find subtraction of two matrices.
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+int a[5],b[5],c[5],i;
+clrscr();
+printf(“enter value for array a ”);
+for(i=0;i<5;i++)
+scanf(“%d”,&a[i]);
+printf(“enter value for array b ”);
+for(i=0;i<5;i++)
+scanf(“%d”,&b[i]);
+for(i=0;i<5;i++)
+c[i]=a[i]-b[i];
+printf(“subtraction”);
+for(i=0;i<5;i++)
+printf(“ %d ”,c[i]);
+getch();
+}
+
+
+Output:
+enter value for array a: 7
+8
+9
+4
+5
+enter value for array b: 4
+5
+6
+1
+2
+subtraction 3 3 3 3 3
+</pre>
+</body>
+</html>

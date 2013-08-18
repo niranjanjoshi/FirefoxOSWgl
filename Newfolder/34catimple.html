@@ -1,0 +1,42 @@
+
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 6.7. Cat implementation in CAT.CPP.
+1: // Demonstrates inline functions
+2: // and inclusion of header files
+3:
+4: #include "cat.hpp" // be sure to include the header files!
+5:
+6:
+7: Cat::Cat(int initialAge) //constructor
+8: {
+9: itsAge = initialAge;
+10: }
+11:
+12: Cat::~Cat() //destructor, takes no action
+13: {
+14: }
+15:
+16: // Create a cat, set its age, have it
+17: // meow, tell us its age, then meow again.
+18: int main()
+19: {
+20: Cat Frisky(5);
+21: Frisky.Meow();
+22: cout << "Frisky is a cat who is " ;
+23: cout << Frisky.GetAge() << " years old.\n";
+24: Frisky.Meow();
+25: Frisky.SetAge(7);
+26: cout << "Now Frisky is " ;
+27: cout << Frisky.GetAge() << " years old.\n";
+28: return 0;
+29: }
+Output: Meow.
+Frisky is a cat who is 5 years old.
+Meow.
+Now Frisky is 7 years old.
+</pre>
+</body>
+</html>

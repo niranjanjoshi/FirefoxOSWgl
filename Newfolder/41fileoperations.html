@@ -1,0 +1,54 @@
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+
+
+ File Operations:
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+file *fp,*fp1;
+char c;
+clrscr();
+fp=fopen(“test.c”,”w”);
+printf(“\nenter the contents for file1(#.end)\n”);
+c=getchar();
+while(c!=’#’)
+{
+fputc(c,fp);
+c=getchar();
+}
+rewind(fp);
+fp=fopen(“test.c”,”r”);
+fp1=fopen(“tes.c”,”w”);
+c=fgetc(fp);
+while(c!=eof)
+{
+fputc(c,fp);
+c=fgetc(fp);
+}
+fclose(fp);
+fclose(fp1);
+fp1=fopen(“tes.c”,”r”);
+c=fgetc(fp1);
+printf(“\nthe contents in file 2\n”);
+while(c!=eof)
+{
+putchar(c);
+c=fgetc(fp1);
+}
+fclose(fp1);
+getch();
+}
+
+
+Output:
+enter the contents of file1(#-end)
+good morning#
+the contents of file2
+good mornin
+</pre>
+</body>
+</html>

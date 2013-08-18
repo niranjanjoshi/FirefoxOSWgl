@@ -1,0 +1,31 @@
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+ Program to calculate sum of 5 subjects and find percentage.
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+int s1,s2,s3,s4,s5,sum,total=500;
+float per;
+clrscr();
+printf(“enter marks of 5 subjects: ”);
+scanf(“%d%d%d%d%d”,&s1,&s2,&s3,&s4,&s5);
+sum=s1+s2+s3+s4+s5;
+printf(“sum=%d”,sum);
+per=(sum*100)/total;
+printf(“percentage=%f”,per);
+getch();
+}
+Output:
+enter marks of 5 subjects: 60
+65
+50
+60
+60
+sum=300
+percentage=60.000
+</pre>
+</body>
+</html>

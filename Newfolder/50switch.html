@@ -1,0 +1,40 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+ Listing 7.16. Demonstrating the switch statement.
+1: //Listing 7.16
+2: // Demonstrates switch statement
+3:
+4:  #include &lt;iostream.h&gt;
+5:
+6: int main()
+7: {
+8: unsigned short int number;
+9: cout << "Enter a number between 1 and 5: ";
+10: cin >> number;
+11: switch (number)
+12: {
+13: case 0: cout << "Too small, sorry!";
+14: break;
+15: case 5: cout << "Good job!\n"; // fall through
+16: case 4: cout << "Nice Pick!\n"; // fall through
+17: case 3: cout << "Excellent!\n"; // fall through
+18: case 2: cout << "Masterful!\n"; // fall through
+19: case 1: cout << "Incredible!\n";
+20: break;
+21: default: cout << "Too large!\n";
+22: break;
+23: }
+24: cout << "\n\n";
+25: return 0;
+26: }
+Output: Enter a number between 1 and 5: 3
+Excellent!
+Masterful!
+Incredible!
+Enter a number between 1 and 5: 8 
+Too large!
+</pre>
+</body>
+</html>

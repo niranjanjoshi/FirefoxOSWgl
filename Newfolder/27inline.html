@@ -1,0 +1,38 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+//Listing 5.9. Demonstrates an inline function.
+ // Listing 5.9 - demonstrates inline functions
+
+  #include &lt;iostream.h&gt;
+
+ inline int Double(int);
+
+ int main()
+ {
+ int target;
+
+ cout << "Enter a number to work with: ";
+ cin >> target;
+ cout << "\n";
+
+ target = Double(target);
+ cout << "Target: " << target << endl;
+
+ target = Double(target);
+ cout << "Target: " << target << endl;
+
+
+ target = Double(target);
+ cout << "Target: " << target << endl;
+ return 0;
+ }
+
+ int Double(int target)
+ {
+ return 2*target;
+ }
+</pre>
+</body>
+</html>

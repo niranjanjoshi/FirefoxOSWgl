@@ -1,0 +1,77 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 11.2. Writing past the end of an array.
+1: //Listing 11.2
+2: // Demonstrates what happens when you write past the end
+3: // of an array
+4:
+5:  #include &lt;iostream.h&gt;
+6: int main()
+7: {
+8: // sentinels
+9: long sentinelOne[3];
+10: long TargetArray[25]; // array to fill
+11: long sentinelTwo[3];
+12: int i;
+13: for (i=0; i<3; i++)
+14: sentinelOne[i] = sentinelTwo[i] = 0;
+15:
+16: for (i=0; i<25; i++)
+17: TargetArray[i] = 0;
+18:
+19: cout << "Test 1: \n"; // test current values (should be
+0)
+20: cout << "TargetArray[0]: " << TargetArray[0] << "\n";
+21: cout << "TargetArray[24]: " << TargetArray[24] << "\n\n";
+22:
+23: for (i = 0; i<3; i++)
+24: {
+25: cout << "sentinelOne[" << i << "]: ";
+26: cout << sentinelOne[i] << "\n";
+27: cout << "sentinelTwo[" << i << "]: ";
+28: cout << sentinelTwo[i]<< "\n";
+29: }
+30:
+31: cout << "\nAssigning...";
+32: for (i = 0; i<=25; i++)
+33: TargetArray[i] = 20;
+34:
+35: cout << "\nTest 2: \n";
+36: cout << "TargetArray[0]: " << TargetArray[0] << "\n";
+37: cout << "TargetArray[24]: " << TargetArray[24] << "\n";
+38: cout << "TargetArray[25]: " << TargetArray[25] << "\n\n";
+39: for (i = 0; i<3; i++)
+40: {
+41: cout << "sentinelOne[" << i << "]: ";
+42: cout << sentinelOne[i]<< "\n";
+43: cout << "sentinelTwo[" << i << "]: ";
+44: cout << sentinelTwo[i]<< "\n";
+45: }
+46:
+47: return 0;
+48: }
+Output: Test 1:
+TargetArray[0]: 0
+TargetArray[24]: 0
+SentinelOne[0]: 0
+SentinelTwo[0]: 0
+SentinelOne[1]: 0
+SentinelTwo[1]: 0
+SentinelOne[2]: 0
+SentinelTwo[2]: 0
+Assigning...
+Test 2:
+TargetArray[0]: 20
+TargetArray[24]: 20
+TargetArray[25]: 20
+SentinelOne[0]: 20
+SentinelTwo[0]: 0
+SentinelOne[1]: 0
+SentinelTwo[1]: 0
+SentinelOne[2]: 0
+SentinelTwo[2]: 0
+</pre>
+</body>
+</html>

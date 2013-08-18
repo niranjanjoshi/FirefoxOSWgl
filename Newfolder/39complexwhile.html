@@ -1,0 +1,46 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 7.3. Complex while loops.
+1: // Listing 7.3
+2: // Complex while statements
+3:
+4:  #include &lt;iostream.h&gt;
+5:
+6: int main()
+7: {
+8: unsigned short small;
+9: unsigned long large;
+10: const unsigned short MAXSMALL=65535;
+11:
+12: cout << "Enter a small number: ";
+13: cin >> small;
+14: cout << "Enter a large number: ";
+15: cin >> large;
+16:
+17: cout << "small: " << small << "...";
+18:
+19: // for each iteration, test three conditions
+20: while (small < large && large > 0 && small < MAXSMALL)
+21:
+22: {
+23: if (small % 5000 == 0) // write a dot every 5k lines
+24: cout << ".";
+25:
+26: small++;
+27:
+28: large-=2;
+29: }
+30:
+31: cout << "\nSmall: " << small << " Large: " << large <<
+endl;
+32: return 0;
+33: }
+Output: Enter a small number: 2
+Enter a large number: 100000
+small: 2.........
+Small: 33335 Large: 33334
+</pre>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 11.3. Using consts and enums in arrays.
+1: // Listing 11.3
+2: // Dimensioning arrays with consts and enumerations
+3:
+4:  #include &lt;iostream.h&gt;
+5: int main()
+6: {
+7: enum WeekDays { Sun, Mon, Tue,
+8: Wed, Thu, Fri, Sat, DaysInWeek };
+9: int ArrayWeek[DaysInWeek] = { 10, 20, 30, 40, 50, 60, 70
+};
+10:
+11: cout << "The value at Tuesday is: " << ArrayWeek[Tue];
+12: return 0;
+13: }
+Output: The value at Tuesday is: 30
+</pre>
+</body>
+</html>

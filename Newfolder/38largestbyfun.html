@@ -1,0 +1,43 @@
+
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+Program to find largest of two numbers using functions.
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+void max();
+clrscr();
+max();
+getch();
+}
+void max()
+{
+int a[5],max,n,i;
+printf(“How many no’s you want to enter: ”);
+scanf(“%d”,&n);
+printf(“Enter element for the array: ”);
+for(i=0;i<n;i++)
+scanf(“%d”,&a[i]);
+max=a[0];
+for(i=1;i<5;i++)
+{
+if(max<a[i])
+max=a[i];
+}
+printf(“maximum no= %d”,max);
+}
+
+Output:
+How many no’s you want to enter: 4
+Enter element for array: 4
+5
+6
+1
+maximum no: 6
+</pre>
+</body>
+</html>

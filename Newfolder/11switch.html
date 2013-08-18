@@ -1,0 +1,64 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Program to use switch statement. Display Monday to Sunday.
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+char ch;
+clrscr();
+printf(“enter m for Monday\nt for Tuesday\nw for Wednesday\nh for Thursday\nf for
+Friday\ns for Saturday\nu for Sunday);
+scanf(“%c”,&ch);
+switch(ch)
+{
+case ‘m’:
+case ‘M’:
+printf(“monday”);
+break;
+case ‘t’:
+case ‘T’:
+printf(“tuesday”);
+break;
+case ‘w’:
+case ‘W’:
+printf(“wednesday”);
+break;
+case ‘h’:
+case ‘H’:
+printf(“thursday”);
+break;
+case ‘f ’:
+case ‘F’:
+printf(“friday”);
+break;
+case ‘s’:
+case ‘S’:
+printf(“saturday”);
+break;
+case ‘u’:
+case ‘U’:
+printf(“sunday”);
+break;
+default :
+printf(“wrong input”);
+break;
+}
+getch();
+}
+
+Output:
+enter m for Monday
+t for Tuesday
+w for Wednesday
+h for Thursday
+f for Friday
+s for Saturday
+u for Sunday
+f for friday
+
+</pre>
+</body>
+</html>

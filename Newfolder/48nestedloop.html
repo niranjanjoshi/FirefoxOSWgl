@@ -1,0 +1,38 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 7.14. Illustrates nested for loops.
+1: //Listing 7.14
+2: //Illustrates nested for loops
+3:
+4:  #include &lt;iostream.h&gt;
+5:
+6: int main()
+7: {
+8: int rows, columns;
+9: char theChar;
+10: cout << "How many rows? ";
+11: cin >> rows;
+12: cout << "How many columns? ";
+13: cin >> columns;
+14: cout << "What character? ";
+15: cin >> theChar;
+16: for (int i = 0; i<rows; i++)
+17: {
+18: for (int j = 0; j<columns; j++)
+19: cout << theChar;
+20: cout << "\n";
+21: }
+22: return 0;
+23: }
+Output: How many rows? 4
+How many columns? 12
+What character? x
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+xxxxxxxxxxxx
+</pre>
+</body>
+</html>

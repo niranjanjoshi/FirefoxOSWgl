@@ -1,0 +1,54 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Program to display arithmetic operator using switch case.
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+int a,b,n,s,m,su,d;
+clrscr();
+printf(“enter two no’s : ”);
+scanf(“%d%d”,&a,&b);
+printf(“enter 1 for sum\n2 for multiply\n3for subtraction\n4 for division: ”);
+scanf(“%d”,&n);
+switch(n)
+{
+case 1:
+s=a+b;
+printf(“sum=%d”,s);
+break;
+case 2:
+m=a*b;
+printf(“multiply=%d”,m);
+break;
+case 3:
+su=a-b;
+printf(“subtraction=%d”,su);
+break;
+case 4:
+d=a/b;
+printf(“divission=%d”,d);
+break;
+
+default:
+printf(“wrong input”);
+break;
+}
+getch();
+}
+
+
+Output:
+enter two no’s: 8
+4
+enter 1 for sum
+2 for multiply
+3 for subtraction
+4 for division: 1
+sum=12
+
+</pre>
+</body>
+</html>

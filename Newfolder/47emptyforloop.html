@@ -1,0 +1,35 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 7.12. Illustrating empty for loop statement.
+1: //Listing 7.12 illustrating
+2: //empty for loop statement
+3:
+4:  #include &lt;iostream.h&gt;
+5:
+6: int main()
+7: {
+8: int counter=0; // initialization
+9: int max;
+10: cout << "How many hellos?";
+11: cin >> max;
+12: for (;;) // a for loop that doesn't end
+13: {
+14: if (counter < max) // test
+15: {
+16: cout << "Hello!\n";
+17: counter++; // increment
+18: }
+19: else
+20: break;
+21: }
+22: return 0;
+23: }
+Output: How many hellos?3
+Hello!
+Hello!
+Hello!
+</pre>
+</body>
+</html>

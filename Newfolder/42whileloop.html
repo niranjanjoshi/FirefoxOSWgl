@@ -1,0 +1,33 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 7.6. Skipping the body of the while Loop.
+1: // Listing 7.6
+2: // Demonstrates skipping the body of
+3: // the while loop when the condition is false.
+4:
+5:  #include &lt;iostream.h&gt;
+6:
+7: int main()
+8: {
+9: int counter;
+10: cout << "How many hellos?: ";
+11: cin >> counter;
+12: while (counter > 0)
+13: {
+14: cout << "Hello!\n";
+15: counter--;
+16: }
+17: cout << "Counter is OutPut: " << counter;
+18: return 0;
+19: }
+Output: How many hellos?: 2
+Hello!
+Hello!
+Counter is OutPut: 0
+How many hellos?: 0
+Counter is OutPut: 0
+</pre>
+</body>
+</html>

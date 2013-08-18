@@ -1,0 +1,62 @@
+
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+
+Number Of Occurrences Of Vowels, Consonants, Words, Spaces And
+Special Characters In The Given Statement.
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;string.h&gt;
+#include&lt;ctype.h&gt;
+void main()
+{
+char s[100];
+int vow=0,cons=0,spc=0,punc=0,l,i;
+clrscr();
+printf(“enter the statement\n”);
+gets(s);
+l=strlen(s);
+for(i=0;i<l;i++)
+{
+if(isalpha(s[i]))
+{
+if(s[i]==’a’||s[i]==’e’||s[i]==’i’||s[i]==’o’||s[i]==’u’)
+}
+vow++;
+}
+else
+{
+cons++;
+}
+}
+if(isspace(s[i])
+{
+spc++;
+}
+if(ispunct(s[i]))
+{
+punc++;
+}
+}
+printf(“\nno.of words=%d”,spc+1);
+printf(“\nno.of vowels=%d”,vow);
+printf(“\nno.of consonants=%d”,cons);
+printf(“\nno.of space=%d”,spc);
+printf(“\nno.on special characters=%d”,punc);
+getch();
+}
+Output:
+Enter the statement
+*Nothing is impossible in the world.
+No.of words=6
+No.of vowels=10
+No.of consonants=19
+No.of space=5
+No.of special characters=1
+</pre>
+</body>
+</html>

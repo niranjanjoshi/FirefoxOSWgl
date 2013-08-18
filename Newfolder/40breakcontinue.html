@@ -1,0 +1,65 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 7.4. break and continue.
+1: // Listing 7.4
+2: // Demonstrates break and continue
+3:
+4:  #include &lt;iostream.h&gt;
+5:
+6: int main()
+7: {
+8: unsigned short small;
+9: unsigned long large;
+10: unsigned long skip;
+11: unsigned long target;
+12: const unsigned short MAXSMALL=65535;
+13:
+14: cout << "Enter a small number: ";
+15: cin >> small;
+16: cout << "Enter a large number: ";
+17: cin >> large;
+18: cout << "Enter a skip number: ";
+19: cin >> skip;
+20: cout << "Enter a target number: ";
+21: cin >> target;
+22:
+23: cout << "\n";
+24:
+25: // set up 3 stop conditions for the loop
+26: while (small < large && large > 0 && small < 65535)
+27:
+28: {
+29:
+30: small++;
+31:
+32: if (small % skip == 0) // skip the decrement?
+33: {
+34: cout << "skipping on " << small << endl;
+35: continue;
+36: }
+37:
+38: if (large == target) // exact match for the target?
+39: {
+40: cout << "Target reached!";
+41: break;
+42: }
+43:
+44: large-=2;
+45: } // end of while loop
+46:
+47: cout << "\nSmall: " << small << " Large: " << large <<
+endl;
+48: return 0;
+49: }
+Output: Enter a small number: 2
+Enter a large number: 20
+Enter a skip number: 4
+Enter a target number: 6
+skipping on 4
+skipping on 8
+Small: 10 Large: 8
+</pre>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 8.4. Allocating, using, and deleting pointers.
+1: // Listing 8.4
+2: // Allocating and deleting a pointer
+3:
+4:  #include &lt;iostream.h&gt;
+5: int main()
+6: {
+7: int localVariable = 5;
+8: int * pLocal= &localVariable;
+9: int * pHeap = new int;
+10: if (pHeap == NULL)
+11: {
+12: cout << "Error! No memory for pHeap!!";
+13: return 0;
+14: }
+15: *pHeap = 7;
+16: cout << "localVariable: " << localVariable << "\n";
+17: cout << "*pLocal: " << *pLocal << "\n";
+18: cout << "*pHeap: " << *pHeap << "\n";
+19: delete pHeap;
+20: pHeap = new int;
+21: if (pHeap == NULL)
+22: {
+23: cout << "Error! No memory for pHeap!!";
+24: return 0;
+25: }
+26: *pHeap = 9;
+27: cout << "*pHeap: " << *pHeap << "\n";
+28: delete pHeap;
+29: return 0;
+30: }
+Output: localVariable: 5
+*pLocal: 5
+*pHeap: 7
+*pHeap: 9
+</pre>
+</body>
+</html>

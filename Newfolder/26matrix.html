@@ -1,0 +1,73 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+ Program to display a matrix.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[3][2],b[3][2],i,j;
+clrscr();
+printf(“enter value for a matrix: ”);
+for(i=0;i<3;i++)
+{
+for(j=0;j<2;j++)
+scanf(“%d”,&a[i][j]);
+}
+printf(“enter value for b matrix: ”);
+for(i=0;i<3;i++)
+{
+for(j=0;j<2;j++)
+scanf(“%d”,&b[i][j]);
+}
+printf(“\na matrix is\n\n”);
+for(i=0;i<3;i++)
+{
+for(j=0;j<2;j++)
+
+{
+printf(“ %d ”,a[i][j]);
+}
+printf(“\n”);
+}
+printf(“\nb matrix is\n\n”);
+for(i=0;i<3;i++)
+{
+for(j=0;j<2;j++)
+{
+printf(“ %d ”,b[i][j]);
+}
+printf(“\n”);
+}
+getch();
+}
+
+
+Output:
+enter value for a matrix: 7
+8
+9
+4
+5
+6
+enter value for b matrix: 3
+2
+1
+4
+5
+6
+a matrix is
+7 8
+9 4
+5 6
+
+b matrix is
+3 2
+1 4
+5 6
+
+
+</pre>
+</body>
+</html>

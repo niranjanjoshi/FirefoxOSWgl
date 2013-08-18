@@ -1,0 +1,49 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 8.2. Manipulating data by using pointers.
+ // Listing 8.2 Using pointers
+
+3:  #include &lt;iostream.h&gt;
+4:
+5: typedef unsigned short int USHORT;
+6: int main()
+7: {
+8: USHORT myAge; // a variable
+9: USHORT * pAge = 0; // a pointer
+10: myAge = 5;
+11: cout << "myAge: " << myAge << "\n";
+12:
+13: pAge = &myAge; // assign address of myAge to pAge
+14:
+15: cout << "*pAge: " << *pAge << "\n\n";
+16:
+17: cout << "*pAge = 7\n";
+18:
+19: *pAge = 7; // sets myAge to 7
+20:
+21: cout << "*pAge: " << *pAge << "\n";
+22: cout << "myAge: " << myAge << "\n\n";
+23:
+24:
+25: cout << "myAge = 9\n";
+26:
+27: myAge = 9;
+28:
+29: cout << "myAge: " << myAge << "\n";
+30: cout << "*pAge: " << *pAge << "\n";
+31:
+32: return 0;
+33: }
+Output: myAge: 5
+*pAge: 5
+*pAge = 7
+*pAge: 7
+myAge: 7
+myAge = 9
+myAge: 9
+*pAge: 9
+</pre>
+</body>
+</html>

@@ -1,0 +1,35 @@
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+
+Program to swap two numbers using functions.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+void swap(int,int);
+int a,b,r;
+clrscr();
+printf(“enter value for a&b: ”);
+scanf(“%d%d”,&a,&b);
+swap(a,b);
+getch();
+}
+void swap(int a,int b)
+{
+int temp;
+temp=a;
+a=b;
+b=temp;
+printf(“after swapping the value for a & b is : %d %d”,a,b);
+}
+
+Output:
+enter value for a&b: 4
+5
+after swapping the value for a & b : 5 4
+
+</pre>
+</body>
+</html>

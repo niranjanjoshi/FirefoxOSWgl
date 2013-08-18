@@ -1,0 +1,45 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 11.4. Creating an array of objects.
+1: // Listing 11.4 - An array of objects
+2:
+3:  #include &lt;iostream.h&gt;
+4:
+5: class CAT
+6: {
+7: public:
+8: CAT() { itsAge = 1; itsWeight=5; }
+9: ~CAT() {}
+10: int GetAge() const { return itsAge; }
+11: int GetWeight() const { return itsWeight; }
+12: void SetAge(int age) { itsAge = age; }
+13:
+14: private:
+15: int itsAge;
+16: int itsWeight;
+17: };
+18:
+19: int main()
+20: {
+21: CAT Litter[5];
+22: int i;
+23: for (i = 0; i < 5; i++)
+24: Litter[i].SetAge(2*i +1);
+25:
+26: for (i = 0; i < 5; i++)
+27: {
+28: cout << "Cat #" << i+1<< ": ";
+29: cout << Litter[i].GetAge() << endl;
+30: }
+31: return 0;
+32: }
+Output: cat #1: 1
+cat #2: 3
+cat #3: 5
+cat #4: 7
+cat #5: 9
+</pre>
+</body>
+</html>

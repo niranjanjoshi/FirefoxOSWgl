@@ -1,0 +1,30 @@
+ <!doctype html>
+<head></head>
+<body>
+<pre>
+
+A program to evaluate the equation y=xn when n is a non-negative integer.
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+int count, n;
+float x,y;
+printf(“Enter the values of x and n:”);
+scanf(“%f%d”, &x,&n);
+y=1.0;
+count=1;
+while(count<=n)
+{
+y=y*x;
+count++;
+}
+printf(“x=%f; n=%d; x to power n=%f”, x, n,y);
+}
+Output:
+Enter the values of x and n: 2.5 4
+X=2.500000; n=4; x to power n= 39.062500
+</pre>
+</body>
+</html>

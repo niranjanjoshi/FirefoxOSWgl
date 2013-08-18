@@ -1,0 +1,80 @@
+
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 6.4. Using constructors and destructors.
+1: // Demonstrates declaration of a constructors and
+2: // destructor for the Cat class
+3:
+4:  #include &lt;iostream.h&gt; // for cout
+5:
+6: class Cat // begin declaration of the class
+7: {
+8: public: // begin public section
+9: Cat(int initialAge); // constructor
+10: ~Cat(); // destructor
+11: int GetAge(); // accessor function
+12: void SetAge(int age); // accessor function
+13: void Meow();
+14: private: // begin private section
+15: int itsAge; // member variable
+16: };
+17:
+18: // constructor of Cat,
+19: Cat::Cat(int initialAge)
+20: {
+21: itsAge = initialAge;
+22: }
+23:
+24: Cat::~Cat() // destructor, takes no action
+25: {
+26: }
+27:
+28: // GetAge, Public accessor function
+29: // returns value of itsAge member
+30: int Cat::GetAge()
+31: {
+32: return itsAge;
+33: }
+34:
+35: // Definition of SetAge, public
+36: // accessor function
+37:
+38: void Cat::SetAge(int age)
+39: {
+40: // set member variable its age to
+41: // value passed in by parameter age
+42: itsAge = age;
+43: }
+44:
+45: // definition of Meow method
+46: // returns: void
+47: // parameters: None
+48: // action: Prints "meow" to screen
+49: void Cat::Meow()
+50: {
+51: cout << "Meow.\n";
+52: }
+53:
+54: // create a cat, set its age, have it
+55 // meow, tell us its age, then meow again.
+56: int main()
+57: {
+58: Cat Frisky(5);
+59: Frisky.Meow();
+60: cout << "Frisky is a cat who is " ;
+61: cout << Frisky.GetAge() << " years old.\n";
+62: Frisky.Meow();
+63: Frisky.SetAge(7);
+64: cout << "Now Frisky is " ;
+65: cout << Frisky.GetAge() << " years old.\n";
+66; return 0;
+67: }
+Output: Meow.
+Frisky is a cat who is 5 years old.
+Meow.
+Now Frisky is 7 years old
+</pre>
+</body>
+</html>

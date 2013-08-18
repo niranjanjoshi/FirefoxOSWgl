@@ -1,0 +1,13 @@
+{
+  "name": "Programming Guide",
+  "description": "In this app various programs of C and C++ are illustrated in simplified manner.Output of C programs are also displayed after each program.This app is a handy tool to learn programming anywhere and at anytime",
+  "launch_path": "/App.html",
+  "icons": {
+    "128": "/center-c-letter-logo-design_1x.jpg"
+  },
+  "developer": {
+    "name": "Niranjan Joshi",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}

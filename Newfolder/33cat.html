@@ -1,0 +1,20 @@
+<!doctype html>
+<head></head>
+<body>
+<pre>
+Listing 6.6. Cat class declaration in CAT.HPP
+1:  #include &lt;iostream.h&gt;
+2: class Cat
+3: {
+4: public:
+5: Cat (int initialAge);
+6: ~Cat();
+7: int GetAge() { return itsAge;} // inline!
+8: void SetAge (int age) { itsAge = age;} // inline!
+9: void Meow() { cout << "Meow.\n";} // inline!
+10: private:
+11: int itsAge;
+12: };
+</pre>
+</body>
+</html>
